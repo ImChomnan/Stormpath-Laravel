@@ -1,0 +1,56 @@
+{
+    "name": "stormpath/laravel",
+    "description": "Build simple, secure web applications with Stormpath and Laravel!",
+    "license": "Apache-2.0",
+    "type": "laravel-package",
+    "keywords": [
+        "users",
+        "laravel",
+        "accounts",
+        "stormpath",
+        "authorization",
+        "authentication"
+    ],
+    "authors": [
+        {
+            "name": "Brian Retterer",
+            "email": "brian@stormpath.com",
+            "homepage": "https://stormpath.com",
+            "role": "PHP Developer Evangelist"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "stormpath/sdk": "~1.14",
+        "illuminate/http": "~5.1|~5.2",
+        "illuminate/routing": "~5.1|~5.2",
+        "illuminate/validation": "~5.1|~5.2",
+        "illuminate/support": "~5.1|~5.2",
+        "bretterer/iso_duration_converter": "^0.1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "~0.9",
+        "orchestra/testbench": "~3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Stormpath\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Stormpath\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "support": {
+        "source": "https://github.com/stormpath/stormpath-laravel",
+        "email": "support@stormpath.com",
+        "irc": "irc://irc.freenode.org/stormpath",
+        "issues": "https://github.com/stormpath/stormpath-laravel/issues",
+        "docs": "http://docs.stormpath.com/php/laravel/latest/"
+    },
+    "replace": {
+        "stormpath/laravel-auth": "self.version"
+    }
+}
